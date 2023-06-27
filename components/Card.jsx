@@ -1,7 +1,15 @@
+import test from "../src/assets/library.png";
+import location from "../src/assets/location.svg";
+
 export default function Card() {
   return (
-    <div>
-      <h1>Card here!</h1>
+    <div className="card">
+      <img src={test} alt="" />
+      <div>
+        <img src={location} />
+        <p>Taipei</p>
+        <a href="#">View on Google maps</a>
+      </div>
     </div>
   );
 }

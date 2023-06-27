@@ -1,4 +1,4 @@
-import logo from "../public/globe.png";
+import logo from "../src/assets/globe.png";
 
 export default function Navbar() {
   return (
