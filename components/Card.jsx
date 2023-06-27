@@ -1,25 +1,26 @@
-import test from "../src/assets/library.png";
+/* eslint-disable react/prop-types */
 import location from "../src/assets/location.svg";
 
-export default function Card() {
+export default function Card(props) {
   return (
     <div className="card">
-      <img src={test} className="card--image" />
+      <img src={`../src/assets/${props.image}`} className="card--image" />
       <div className="card--text">
         <div className="card--location">
           <img src={location} className="card--location_icon" />
-          <p className="card--location_text">Taipei</p>
-          <a href="#" className="card--location_link">
+          <p className="card--location_text">{props.location}</p>
+          <a
+            href={props.googleMap}
+            target="_blank"
+            className="card--location_link"
+            rel="noreferrer"
+          >
             View on Google maps
           </a>
         </div>
-        <p className="card--title">Not just a library</p>
-        <p className="card--description">
-          This was one of my favorite places to study and just chill out in
-          Taipei. Hidden inside of the Songhan Creative Park, this is a quite
-          and aesthetic space that is filled with art + architecture books and
-          magazines.
-        </p>
+        <p className="card--title">{props.title}</p>
+
+        <p className="card--description">{props.description}</p>
       </div>
     </div>
   );
