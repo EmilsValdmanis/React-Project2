@@ -1,7 +1,10 @@
+import logo from "../public/globe.png";
+
 export default function Navbar() {
   return (
-    <div>
-      <h1>Navbar here!</h1>
-    </div>
+    <nav className="navbar">
+      <img src={logo} className="navbar--logo" />
+      <p className="navbar--text">Travel Journal</p>
+    </nav>
   );
 }

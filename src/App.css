@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #f45b5a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 80px;
+}
+
+.navbar--text {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar--logo {
+  height: 50%;
+}
