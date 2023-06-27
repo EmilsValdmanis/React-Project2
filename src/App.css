@@ -8,6 +8,8 @@ body {
   padding: 0;
 }
 
+/* Navbar styling */
+
 .navbar {
   background-color: #f45b5a;
   display: flex;
@@ -25,4 +27,53 @@ body {
 
 .navbar--logo {
   height: 50%;
+}
+
+/* Card styling */
+
+.card {
+  display: flex;
+  height: 400px;
+  width: 80%;
+  margin: 60px auto;
+}
+
+.card--text {
+  margin-left: 40px;
+}
+
+.card--location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.card--location_link {
+  margin-left: 15px;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.card--location_text {
+  font-size: 20px;
+}
+
+.card--location_icon {
+  height: 20px;
+}
+
+.card--title {
+  font-weight: bold;
+  font-size: 50px;
+  margin: 40px 0px;
+}
+
+.card--description {
+  font-size: 30px;
+}
+
+.card--image {
+  height: 100%;
 }
